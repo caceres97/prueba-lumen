@@ -16,7 +16,7 @@ $(document).ready(function(){
         }else
         {
           localStorage.setItem("token", result.token);
-          $(location).attr('href','http://35.232.1.82/prueba-lumen/users-clientindex.php');
+          $(location).attr('href','http://35.232.1.82/prueba-lumen/index.php');
         }
       }
     });
