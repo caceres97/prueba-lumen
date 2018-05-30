@@ -34,8 +34,6 @@ $(document).ready(function(){
           id: $('#txt-id').val(),
           firstnames: $('#txt-firstnames').val(),
           lastnames: $('#txt-lastnames').val(),
-          nickname: $('#txt-nickname').val(),
-          password: $('#txt-password').val(),
           remark: $('#txt-remark').val(),
           remember_token: localStorage.getItem("token")
         },
