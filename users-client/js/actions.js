@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('#btn-login').click(function()
   {
     $.ajax({
-      url: 'http://localhost:8000/login',
+      url: 'http://104.197.242.219/login',
       type: 'POST',
       data: {
         nickname: $('#txt-login-nickname').val(),
@@ -28,7 +28,7 @@ $(document).ready(function(){
     if($('#txt-id').val() != "")
     {
       $.ajax({
-        url: 'http://localhost:8000/api/user-update',
+        url: 'http://104.197.242.219/api/user-update',
         type: 'POST',
         data: {
           id: $('#txt-id').val(),
@@ -48,7 +48,7 @@ $(document).ready(function(){
       });
     }else {
       $.ajax({
-        url: 'http://localhost:8000/api/user',
+        url: 'http://104.197.242.219/api/user',
         type: 'POST',
         data: {
           firstnames: $('#txt-firstnames').val(),
@@ -100,7 +100,7 @@ $(document).ready(function(){
     }
 
     $.ajax({
-      url: 'http://localhost:8000/api/user-config',
+      url: 'http://104.197.242.219/api/user-config',
       type: 'POST',
       data: {
         nickname: $('#txt-config-nickname').val(),
@@ -118,7 +118,7 @@ $(document).ready(function(){
 
   $('#btn-set-password').click(function(){
     $.ajax({
-      url: 'http://localhost:8000/api/user-config',
+      url: 'http://104.197.242.219/api/user-config',
       type: 'POST',
       data: {
         older: $('#txt-config-password-old').val(),

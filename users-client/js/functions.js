@@ -1,7 +1,7 @@
 function usrLoadTable()
 {
   $.ajax({
-    url: 'http://localhost:8000/user',
+    url: 'http://104.197.242.219/user',
     type: 'GET',
     success: function(data) {
       $(".cpa").remove();
@@ -29,7 +29,7 @@ function usrLoadTable()
 function usrUsers()
 {
   $.ajax({
-    url: 'http://localhost:8000/user',
+    url: 'http://104.197.242.219/user',
     type: 'GET',
     success: function(data) {
       $.each(data, function(index, value){
@@ -74,7 +74,7 @@ function usrDelete(data)
   .then(function() {
     var token = localStorage.getItem("token");
     $.ajax({
-      url: 'http://localhost:8000/api/user-delete',
+      url: 'http://104.197.242.219/api/user-delete',
       type: 'POST',
       data: {
         id: $(data).attr('data-id'),
