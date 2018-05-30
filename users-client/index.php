@@ -144,7 +144,7 @@
     $(document).ready(function(){
       if(!localStorage.getItem("token"))
       {
-        $(location).attr('href','http://35.232.1.82/users-client/login.php');
+        $(location).attr('href','http://35.232.1.82/prueba-lumen/users-client/login.phplogin.php');
       }
       usrLoadTable();
       usrUsers();
